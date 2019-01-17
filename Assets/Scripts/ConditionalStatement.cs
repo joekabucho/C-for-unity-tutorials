@@ -9,13 +9,13 @@ public class ConditionalStatement : MonoBehaviour
 	public Functions otherScript;
 void Update()
 {
-	if (score ==50 && checkpoint=true)
+	if (score ==50 && checkpoint==true)
 	{
 		//calling functions from other scripts
      otherScript.GetComponent<Functions>().Death();
 	}
 	//faster than having multiple if statements
-	else if (score ==40 && checkpoint=true)
+	else if (score ==40 && checkpoint==true)
 	{
       Debug.Log("SCORE IS 40");
 	}
